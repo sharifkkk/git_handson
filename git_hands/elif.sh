@@ -8,6 +8,7 @@ then
 elif [ $num -eq 10 ]
 then 
 	echo "$num is equal/similar to 10"
+	echo "cloud name is also changed from azure to aws"
 else
 	echo "$num is less then 10"
 fi
