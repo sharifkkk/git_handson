@@ -8,7 +8,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        echo 'make test'
+        echo "doing testing ... @${JOB_NAME}"
       }
     }
     stage('deploy') {
