@@ -1,0 +1,20 @@
+    pipeline{
+    agent any
+    stages {
+        stage('master/slave details'){
+            steps{
+                sh '''
+                echo "name of the server"
+                whoami
+                echo "memory information"
+                cat /proc/meminfo
+                echo "cpu information"
+                cat /proc/cpuinfo
+                echo "disk usage"
+                 df -h
+                echo "end of the script"
+                '''
+            }
+        }
+    }
+}
